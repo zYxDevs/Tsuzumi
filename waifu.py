@@ -84,9 +84,18 @@ def greet(message):
 @bot.message_handler(commands = ['help'])
 def help(message):
     msg = ''' Here are the commands :
-    /waifu | /neko | /shinobu | /megumin
-    /kiss  | /lick | /lewd    | /tits 
-    /boobs | /solo | /ero     | /hentai
+    /waifu 
+    /neko 
+    /shinobu 
+    /megumin
+    /kiss  
+    /lick
+    /lewd 
+    /tits 
+    /boobs
+    /solo  
+    /ero 
+    /hentai
     '''
     bot.send_message(message.chat.id, msg)
     
