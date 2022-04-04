@@ -43,11 +43,36 @@ def get_nwaifuurl():
     image_url = contents['url']
     return image_url
 
-def get_nneko():
-    contents = requests.get('https://api.waifu.pics/nsfw/nneko').json()
+def get_lewdurl():
+    contents = requests.get('https://nekos.life/api/v2/img/lewd').json()
     image_url = contents['url']
     return image_url
 
+def get_titsurl():
+    contents = requests.get('https://nekos.life/api/v2/img/tits').json()
+    image_url = contents['url']
+    return image_url
+
+def get_boobsurl():
+    contents = requests.get('https://nekos.life/api/v2/img/boobs').json()
+    image_url = contents['url']
+    return image_url
+
+
+def get_solourl():
+    contents = requests.get('https://nekos.life/api/v2/img/solo').json()
+    image_url = contents['url']
+    return image_url
+
+def get_erourl():
+    contents = requests.get('https://nekos.life/api/v2/img/ero').json()
+    image_url = contents['url']
+    return image_url
+
+def get_hentaiurl():
+    contents = requests.get('https://nekos.life/api/v2/img/hentai').json()
+    image_url = contents['url']
+    return image_url
 
 @bot.message_handler(commands = ['greet','start'])
 def greet(message):
@@ -60,8 +85,8 @@ def greet(message):
 def help(message):
     msg = ''' Here are the commands :
     /waifu | /neko | /shinobu | /megumin
-    /kiss  | /lick | /nwaifu  | /nneko 
- 
+    /kiss  | /lick | /lewd    | /tits 
+    /boobs | /solo | /ero     | /hentai
     '''
     bot.send_message(message.chat.id, msg)
     
@@ -101,17 +126,42 @@ def lick(message):
     url = get_lickurl()
     bot.send_photo(message.chat.id, url)    
     
-@bot.message_handler(commands = ['nwaifu', 'nsfwwaifu'])
-@bot.message_handler(regexp=r'nwaifu')
-def nwaifu(message):
-    url = get_nwaifuurl()
+@bot.message_handler(commands = ['lewd'])
+@bot.message_handler(regexp=r'lewd')
+def lewd(message):
+    url = get_lewdurl()
     bot.send_photo(message.chat.id, url)
     
-@bot.message_handler(commands = ['nneko', 'nsfwneko'])
-@bot.message_handler(regexp=r'nneko')
-def nwaifu(message):
-    url = get_nwaifuurl()
-    bot.send_photo(message.chat.id, url)       
+@bot.message_handler(commands = ['tits'])
+@bot.message_handler(regexp=r'tits')
+def lewdb(message):
+    url = get_titsurl()
+    bot.send_photo(message.chat.id, url)
+    
+@bot.message_handler(commands = ['solo'])
+@bot.message_handler(regexp=r'solo')
+def lewdc(message):
+    url = get_solourl()
+    bot.send_photo(message.chat.id, url)
+    
+@bot.message_handler(commands = ['boobs'])
+@bot.message_handler(regexp=r'boobs')
+def lewdd(message):
+    url = get_boobsurl()
+    bot.send_photo(message.chat.id, url)
+    
+@bot.message_handler(commands = ['ero'])
+@bot.message_handler(regexp=r'ero')
+def ero(message):
+    url = get_erourl()
+    bot.send_photo(message.chat.id, url)
+    
+@bot.message_handler(commands = ['hentai'])
+@bot.message_handler(regexp=r'hentai')
+def hentai(message):
+    url = get_hentaiurl()
+    bot.send_photo(message.chat.id, url)     
+    
 
 @bot.message_handler(func=lambda m: True)
 def repeat(message):
