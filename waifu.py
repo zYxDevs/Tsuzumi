@@ -16,8 +16,8 @@ def get_url():
 @bot.message_handler(commands = ['greet','start', 'help'])
 def greet(message):
     msg = ''' Hi, I'm the Waifu bot
-    I've been built by [Nisarga](https://github.com/nisarga-developer)
-    My source code can be found [here](https://github.com/Nisarga-Developer/WaifuTelegramBot/)
+    
+    
 Send /waifu to get an random waifu image. '''
     bot.send_message(message.chat.id, msg) 
 
