@@ -1,3 +1,3 @@
-# Waifu Telegram Bot (WIP)
+Tsuzumi
 ![well](https://i.waifu.pics/pfkhW0K.png)
-A telegram bot written in python to fetch random anime waifu images (SFW) using waifu.pics API
+A telegram bot written in python to fetch random SFW & NSFW Anime images using nekos.life & waifu.pics API. 
