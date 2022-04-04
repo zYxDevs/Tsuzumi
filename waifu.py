@@ -172,10 +172,6 @@ def hentai(message):
     bot.send_photo(message.chat.id, url)     
     
 
-@bot.message_handler(func=lambda m: True)
-def repeat(message):
-    bot.send_message(message.chat.id, message.text)
-
 def main():
     bot.polling()
 
