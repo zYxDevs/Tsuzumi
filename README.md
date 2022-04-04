@@ -1,8 +1,8 @@
 # Tsuzumi
 ![well](https://i.waifu.pics/pfkhW0K.png)
-A telegram bot written in python to fetch random SFW & NSFW Anime images using nekos.life & waifu.pics API
+A telegram bot written in python to fetch both random SFW & NSFW Anime images using nekos.life & waifu.pics API
 
-### Features
+### Commands
 ``` Here are the commands :
     /waifu 
     /neko 
