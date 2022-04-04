@@ -3,8 +3,19 @@
 A telegram bot written in python to fetch random SFW & NSFW Anime images using nekos.life & waifu.pics API
 
 ### Features
-```
-
+``` Here are the commands :
+    /waifu 
+    /neko 
+    /shinobu 
+    /megumin
+    /kiss  
+    /lick
+    /lewd 
+    /tits 
+    /boobs
+    /solo  
+    /ero 
+    /hentai
 ```
 
 ## Installation & Usage
