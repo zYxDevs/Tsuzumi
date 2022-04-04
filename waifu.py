@@ -9,7 +9,7 @@ token = os.getenv('TOKEN')
 bot = telebot.TeleBot(token)
 
 def get_url():
-    contents = requests.get('https://api.waifu.pics/sfw/waifu/').json()
+    contents = requests.get('https://api.waifu.pics/sfw/waifu').json()
     image_url = contents['url']
     return image_url
 
