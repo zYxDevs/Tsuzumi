@@ -29,12 +29,12 @@ def get_meguminurl():
     return image_url
 
 def get_kissurl():
-    contents = requests.get('https://api.waifu.pics/sfw/kiss').json()
+    contents = requests.get('https://api.waifu.pics/nsfw/trap').json()
     image_url = contents['url']
     return image_url
 
 def get_lickurl():
-    contents = requests.get('https://api.waifu.pics/sfw/lick').json()
+    contents = requests.get('https://api.waifu.pics/nsfw/blowjob').json()
     image_url = contents['url']
     return image_url
 
@@ -88,8 +88,8 @@ def help(message):
     /neko 
     /shinobu 
     /megumin
-    /kiss  
-    /lick
+    /trap
+    /blowjob
     /lewd 
     /tits 
     /boobs
@@ -123,14 +123,14 @@ def megumin(message):
     url = get_meguminurl()
     bot.send_photo(message.chat.id, url)       
 
-@bot.message_handler(commands = ['kiss'])
-@bot.message_handler(regexp=r'kiss')
+@bot.message_handler(commands = ['trap'])
+@bot.message_handler(regexp=r'trap')
 def kiss(message):
     url = get_kissurl()
     bot.send_photo(message.chat.id, url)  
     
-@bot.message_handler(commands = ['lick'])
-@bot.message_handler(regexp=r'lick')
+@bot.message_handler(commands = ['blowjob'])
+@bot.message_handler(regexp=r'blowjob')
 def lick(message):
     url = get_lickurl()
     bot.send_photo(message.chat.id, url)    
