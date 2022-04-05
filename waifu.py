@@ -11,110 +11,89 @@ bot = telebot.TeleBot(token)
 # Let's define stuff
 def get_url():
     contents = requests.get('https://api.waifu.pics/sfw/waifu').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 def get_nekourl():
     contents = requests.get('https://api.waifu.pics/sfw/neko').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 def get_avatarurl():
     contents = requests.get('https://nekos.life/api/v2/img/avatar').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 
 def get_shinobuurl():
     contents = requests.get('https://api.waifu.pics/sfw/shinobu').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 def get_meguminurl():
     contents = requests.get('https://api.waifu.pics/sfw/megumin').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 def get_kissurl():
     contents = requests.get('https://api.waifu.pics/nsfw/trap').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 def get_lickurl():
     contents = requests.get('https://api.waifu.pics/nsfw/blowjob').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 def get_nwaifuurl():
     contents = requests.get('https://api.waifu.pics/nsfw/waifu').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 def get_lewdurl():
     contents = requests.get('https://nekos.life/api/v2/img/lewd').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 def get_holourl():
     contents = requests.get('https://nekos.life/api/v2/img/hololewd').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 def get_titsurl():
     contents = requests.get('https://nekos.life/api/v2/img/tits').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 def get_boobsurl():
     contents = requests.get('https://nekos.life/api/v2/img/boobs').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 def get_solourl():
     contents = requests.get('https://nekos.life/api/v2/img/solo').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 def get_erourl():
     contents = requests.get('https://nekos.life/api/v2/img/ero').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 def get_hentaiurl():
     contents = requests.get('https://nekos.life/api/v2/img/hentai').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 def get_eronurl():
     contents = requests.get('https://nekos.life/api/v2/img/eron').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 
 def get_bjurl():
     contents = requests.get('https://nekos.life/api/v2/img/bj').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 def get_erokiturl():
     contents = requests.get('https://nekos.life/api/v2/img/eroK').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 def get_pussyurl():
     contents = requests.get('https://nekos.life/api/v2/img/pussy').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 def get_kitesuneurl():
     contents = requests.get('https://nekos.life/api/v2/img/lewdk').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 def get_holoerourl():
     contents = requests.get('https://nekos.life/api/v2/img/holoero').json()
-    image_url = contents['url']
-    return image_url
+    return contents['url']
 
 
 @bot.message_handler(commands = ['greet','start'])
