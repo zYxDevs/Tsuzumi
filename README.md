@@ -1,34 +1,59 @@
 # Tsuzumi
-![well](https://i.waifu.pics/pfkhW0K.png)
+![waifu](https://i.waifu.pics/pfkhW0K.png)
 A telegram bot written in python to fetch both random SFW & NSFW Anime images using nekos.life & waifu.pics API
 
 ### Commands
-``` Here are the commands :
-    /waifu 
-    /neko 
-    /shinobu 
+```
+SFW Commands :
+
+    /waifu
+    /neko
+    /shinobu
     /megumin
+    /avatar
+
+NSFW Commands :
+
     /trap
     /blowjob
-    /lewd 
-    /tits 
+    /lewd
+    /tits
     /boobs
     /solo  
-    /ero 
+    /ero
     /hentai
-```
+    /bj
+    /kitesune
+    /eroKitesune
+    /pussy
+    /holo
+    /holoEro
+    /eroNeko
 
-## Installation & Usage
+Other Commands :
+
+    /ping
+    /repo
+    /source
+```
+## Self-Hosting
+
+### Heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+### Railway
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/k17aiQ?referralCode=get-free-credit)
+
+### Host Locally or on VPS
 
 ```sh
-$ git clone https://github.com/nisarga-developer/tsuzumi
-$ cd tsuzumi
+$ git clone https://github.com/nisarga-developer/Tsuzumi
+$ cd Tsuzumi
 ```
 
-* Create `.env` and put your `BOT_TOKEN`
+* Rename `.env.example` to `.env` and fill it up with your `TOKEN`
 
 ```sh
 $ pip3 install -r requirements.txt
 $ python3 waifu.py
 ```
-Enjoy!
+Enjoy!!
