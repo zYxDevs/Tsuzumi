@@ -131,12 +131,12 @@ def greet(message):
 
 @bot.message_handler(commands = ['repo'])
 def greet(message):
-    msg = ''' Repository Link -> https://github.com/nisarga-developer/ '''
+    msg = ''' Repository Link -> https://github.com/nisarga-developer/tsuzumi '''
     bot.send_message(message.chat.id, msg)
 
 @bot.message_handler(commands = ['source'])
 def greet(message):
-    msg = ''' Source Code -> https://github.com/nisarga-developer/
+    msg = ''' Source Code -> https://github.com/nisarga-developer/tsuzumi
               Author -> Nisarga Adhikary
               License -> Apache 2.0 License    '''
     bot.send_message(message.chat.id, msg)
