@@ -41,6 +41,7 @@ Other Commands :
 ### Heroku
 
 ### Railway
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/k17aiQ?referralCode=get-free-credit)
 
 ### Host Locally or on VPS
 
