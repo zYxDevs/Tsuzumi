@@ -8,8 +8,8 @@ A telegram bot written in python to fetch both random SFW & NSFW Anime images us
     /neko 
     /shinobu 
     /megumin
-    /kiss  
-    /lick
+    /trap
+    /blowjob
     /lewd 
     /tits 
     /boobs
